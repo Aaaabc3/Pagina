@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(plano-de-fundo-texturizado-de-marmore-azul-e-dourado.jpg);
+    margin-top: 110px;
+}
+
+
+.class-container {
+    width: 100%;
+    background: linear-gradient(to right, #0c586a 30%, #46a0b6);
+    padding-inline: 16px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.coroa {
+    flex: 1;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.coroa img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left li, .nav-right li {
+    margin-right: 20px;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-center .coroa {
+    margin: 0;
+}
+
+.nav-list li {
+    margin-right: 20px; 
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-list a {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.nav-list i {
+    color: white;
+    font-size: 20px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.nav-list li:hover a, .nav-list li:hover i {
+    color: #68b1bf;
+    transition: 0.5s;
+}
+
+.nav-list {
+    max-width: 1280px;
+    height: 110px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+.nav-list li {
+    margin-right: 6 0px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-list a {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav-list i {
+    color: white;
+    font-size: 20px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.nav-list li:hover a {
+    color: #68b1bf;
+    transition: 0.5s;
+}
+
+.nav-list li:hover i {
+    color: #68b1bf;
+    transition: 0.5s;
+}

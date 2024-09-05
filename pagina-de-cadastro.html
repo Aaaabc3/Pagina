@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Cadastro</title>
+    <link rel='stylesheet' href="styles/cadastro.css">
+
+</head>
+<body>
+    <header class="class-container">      
+        <nav class="nav">
+            <ul class="nav-list">
+                <div class="nav-left">
+                    <li><i class='bx bxs-user-detail'></i><a href="login.html">Login</a></li>
+                    <li><i class='bx bxs-watch'></i><a href="relogios.html">Relógios</a></li>
+                    <li><i class='bx bxs-shopping-bag'></i><a href="pedidos.html">Pedidos</a></li>
+                </div>
+                <div class="nav-center">
+                    <li class="coroa"><a href="index.html"><img src="img/coroa.png" alt="imagem"></a></li>
+                </div>
+                <div class="nav-right">
+                    <li><i class='bx bxs-map'></i><a href="#">Distribuidores Oficiais</a></li>
+                    <li><i class='bx bx-heart'></i><a href="#">Favoritos</a></li>
+                    <li class="search-icon"><i class='bx bx-search'></i><a href="#" onclick="realizarprocura()" class="search-toggle">Busca</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="diplay-5 mb-5"><strong>Cadastro</strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="usuario-form" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="Nome"></label>
+                    <input class="form-control" id="Nome" type="text" placeholder="Nome">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="Email"></label>
+                    <input class="form-control" id="Email" type="text" placeholder="Email">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="Senha"></label>
+                    <input class="form-control" id="Senha" type="text" placeholder="Senha">
+                </div>
+                <div class="col-10 col-md-8">
+                    <input class="btn btn-success add-btn" type="submit" value="Submit">
+                </div>
+            </form>
+            <div class="col-12 col-md-10 mt-5">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Senha</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-usuarios">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+  <script src="Javascript/crudCad.js"></script>
+</body>
+</html>
